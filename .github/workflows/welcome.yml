@@ -1,6 +1,9 @@
+//Give my workflow a name
 name: Post welcome comment
+//My workflow will execute whenever someone opens a pull request in my repository
 on:
   pull_request:
     types: [opened]
+  //Assigns the workflow permissions to operate on the repository  
   permissions:
-    pull-requests: write
+    pull-requests: write //gives the workflow permission to write to pull requests.
